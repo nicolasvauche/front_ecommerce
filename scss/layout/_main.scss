@@ -1,3 +1,34 @@
 .app-main {
-    padding: 2rem 0.5rem;
+    padding: 0.75rem;
+    background-color: $color-secondary;
+
+    & > section {
+        & > header {
+            margin: 0.5rem 0 1rem;
+
+            h2 {
+                padding: 0.5rem;
+                font-family: $font-family-secondary;
+                font-size: 2rem;
+                font-weight: bold;
+                text-align: center;
+                color: $color-white;
+                background-color: $color-primary;
+                border-radius: $thumbnail-border-radius;
+
+                span {
+                    display: block;
+                    margin: 0.25rem 0.25rem 0 0;
+                    font-size: 1rem;
+                    text-align: right;
+                    color: $color-black;
+
+                    @include respond(sm) {
+                        display: inline;
+                        vertical-align: sub;
+                    }
+                }
+            }
+        }
+    }
 }
