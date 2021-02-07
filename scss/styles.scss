@@ -1,2 +1,7 @@
-/* Import layout */
+/* Helpers imports */
+@import "helpers/reset";
+@import "helpers/variables";
+@import "helpers/responsive";
+
+/* Layout imports */
 @import "layout/layout";

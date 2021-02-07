@@ -1,0 +1,9 @@
+.app-footer {
+    padding: 1rem 0.5rem 4.75rem;
+    color: $color-white;
+    background-color: $color-black;
+
+    @include respond(sm) {
+        padding-bottom: 1rem;
+    }
+}
