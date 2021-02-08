@@ -17,6 +17,14 @@
                 height: $thumbnail-image-height;
                 object-fit: cover;
                 display: block;
+
+                @include respond(sm) {
+                    height: calc(#{$thumbnail-image-height} + 8rem);
+                }
+
+                @include respond(md) {
+                    height: calc(#{$thumbnail-image-height} + 16rem);
+                }
             }
         }
 
