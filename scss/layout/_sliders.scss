@@ -13,16 +13,16 @@
 
             img {
                 width: 100%;
-                height: $thumbnail-image-height;
+                height: $slide-image-height;
                 object-fit: cover;
                 display: block;
 
                 @include respond(sm) {
-                    height: calc(#{$thumbnail-image-height} + 8rem);
+                    height: calc(#{$slide-image-height} + 8rem);
                 }
 
                 @include respond(md) {
-                    height: calc(#{$thumbnail-image-height} + 16rem);
+                    height: calc(#{$slide-image-height} + 16rem);
                 }
             }
         }
