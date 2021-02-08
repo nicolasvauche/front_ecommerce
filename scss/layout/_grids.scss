@@ -40,7 +40,7 @@
         }
 
         .grid-item-content {
-            padding: 1rem 0.25rem;
+            padding: 1rem;
             text-align: center;
             background-color: $color-white;
 
@@ -55,6 +55,8 @@
             .grid-item-description {
                 margin-bottom: 1rem;
                 font-size: 0.9rem;
+                text-align: justify;
+                hyphens: auto;
             }
 
             .grid-item-price {
