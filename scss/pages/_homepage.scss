@@ -2,3 +2,8 @@
     position: relative;
     padding: 0;
 }
+
+&.cta {
+    text-align: center;
+    background-color: $color-white;
+}
