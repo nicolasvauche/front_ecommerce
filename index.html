@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <!-- Application header -->
     <header class="app-header">
         <div class="app-brand">
             <a href="./" class="app-logo" title="Retour à l'accueil">
@@ -26,19 +27,82 @@
             </div>
         </div>
 
+        <!-- Application main menu -->
         <nav class="app-mainmenu">
             <ul class="app-menu">
                 <li>
-                    <a href="#" title=""><i class="far fa-user"></i></a>
+                    <a href="#" title="">
+                        <i class="fas fa-store"></i>
+                        Boutique
+                    </a>
                 </li>
                 <li>
-                    <a href="#" title=""><i class="fas fa-power-off"></i></a>
+                    <a href="#" title="">
+                        <i class="far fa-user"></i>
+                        Client
+                    </a>
+                </li>
+                <li style="display: none;">
+                    <a href="#" title="">
+                        <i class="fas fa-power-off"></i>
+                        Déconnexion
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="">
+                        <i class="fas fa-shopping-cart"></i>
+                        Panier
+                    </a>
                 </li>
             </ul>
         </nav>
     </header>
 
+    <!-- Application main -->
     <main class="app-main">
+        <!-- Homepage section Diaporama -->
+        <section class="forward">
+            <a href="#" class="app-slider-previous" title="Précédent">
+                <i class="fas fa-caret-left"></i>
+            </a>
+            <a href="#" class="app-slider-next" title="Suivant">
+                <i class="fas fa-caret-right"></i>
+            </a>
+
+            <div class="app-slider" id="sliderForward">
+                <div class="app-slide">
+                    <figure class="slide-image">
+                        <img src="img/catalog/shoes/shoes01.jpg" alt="Chaussures de ville Homme" />
+                    </figure>
+                    <div class="slide-content">
+                        <h3 class="slide-title">Chaussures de ville Homme</h3>
+                        <p class="slide-price">79<span>99</span></p>
+                    </div>
+                </div>
+
+                <div class="app-slide">
+                    <figure class="slide-image">
+                        <img src="img/catalog/shoes/shoes02.jpg" alt="Chaussures détente" />
+                    </figure>
+                    <div class="slide-content">
+                        <h3 class="slide-title">Chaussures détente</h3>
+                        <p class="slide-price">39<span>99</span></p>
+                    </div>
+                </div>
+
+                <div class="app-slide">
+                    <figure class="slide-image">
+                        <img src="img/catalog/shoes/shoes03.jpg" alt="Chaussures de ville Homme" />
+                    </figure>
+                    <div class="slide-content">
+                        <h3 class="slide-title">Chaussures de ville Homme</h3>
+                        <p class="slide-price">179</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Homepage section Promotions -->
         <section class="promotions">
             <header>
                 <h2>Les promotions <span>du jour</span></h2>
@@ -111,6 +175,7 @@
         </section>
     </main>
 
+    <!-- Application footer -->
     <footer class="app-footer">
         <p class="app-copyrights">© Dynaidev</p>
     </footer>
