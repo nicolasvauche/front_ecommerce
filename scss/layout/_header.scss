@@ -101,20 +101,113 @@
                     text-transform: uppercase;
                     color: $color-secondary;
                     text-decoration: none;
+                    transition: all 0.4s ease-out;
+
+                    @include respond(sm) {
+                        margin: 0 0.5rem;
+                    }
 
                     i {
                         display: block;
                         margin-bottom: 0.5rem;
                         font-size: 1.75rem;
                         color: $color-primary;
+                        transition: all 0.4s ease-out;
                     }
 
+                    &:hover,
                     &.active {
                         color: $color-white;
                         background-color: $color-primary;
 
                         i {
                             color: $color-white;
+                        }
+
+                        @include respond(sm) {
+                            border-radius: $border-radius-default;
+                        }
+                    }
+                }
+
+                &.dropdown {
+                    position: relative;
+
+                    .dropdown-menu {
+                        display: none;
+                        position: absolute;
+                        bottom: 3.75rem;
+                        right: 0;
+                        padding: 0.5rem;
+                        background-color: $color-primary;
+                        box-shadow: -2px -2px 4px rgba($color-black, 0.5);
+                        border-top-left-radius: $border-radius-default;
+
+                        @include respond(sm) {
+                            bottom: initial;
+                            top: 3.75rem;
+                            right: 0.5rem;
+                            box-shadow: -2px 2px 4px rgba($color-black, 0.5);
+                            border-top-left-radius: 0;
+                            border-bottom-left-radius: $border-radius-default;
+                        }
+
+                        a {
+                            font-size: 0.8rem;
+                            white-space: nowrap;
+
+                            @include respond(sm) {
+                                &:hover {
+                                    border-bottom-left-radius: 0;
+                                    border-bottom-right-radius: 0;
+                                }
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        a {
+                            color: $color-white;
+                            background-color: $color-primary;
+
+                            @include respond(sm) {
+                                border-radius: 0;
+                                border-top-left-radius: $border-radius-default;
+                                border-top-right-radius: $border-radius-default;
+                            }
+
+                            i {
+                                color: $color-white;
+                            }
+                        }
+
+                        .dropdown-menu {
+                            display: block;
+
+                            li {
+                                a {
+                                    display: flex;
+                                    align-items: center;
+                                    color: $color-white;
+                                    text-transform: none;
+                                    background-color: transparent;
+
+                                    &:hover {
+                                        color: $color-secondary;
+
+                                        i {
+                                            color: $color-secondary;
+                                        }
+                                    }
+
+                                    i {
+                                        display: inline;
+                                        margin: 0 0.25rem 0 0;
+                                        font-size: 1rem;
+                                        color: $color-white;
+                                    }
+                                }
+                            }
                         }
                     }
                 }
