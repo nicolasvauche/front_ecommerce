@@ -58,4 +58,12 @@ section.cta {
 .app-btn.cta {
     position: relative;
     z-index: 2;
+    color: $color-white;
+    background-color: $color-primary;
+    border-color: $color-primary;
+
+    &:hover {
+        color: $color-primary;
+        background-color: $color-white;
+    }
 }

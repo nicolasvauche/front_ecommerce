@@ -2,9 +2,16 @@
     display: flex;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
     box-shadow: 0 2px 4px rgba($color-black, 0.5);
 
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
     .app-slide {
+        position: relative;
         flex: 1 0 100%;
         scroll-snap-align: start;
 
@@ -40,27 +47,22 @@
             }
 
             .slide-description {
-                margin-bottom: 1rem;
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 2.25rem;
+                padding: 0.5rem;
                 font-size: 0.9rem;
+                background-color: rgba($color-white, 0.75);
             }
 
-            .slide-price {
-                font-family: $font-family-secondary;
-                font-size: 2rem;
-                font-weight: bold;
-
-                span {
-                    font-size: 1rem;
-                    font-weight: normal;
-                    vertical-align: super;
-                    color: rgba($color-black, 0.75);
-                }
-
-                &:after {
-                    content: "€";
-                    margin-left: 0.25rem;
-                    font-size: 1.5rem;
-                }
+            .slide-btn {
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 40%;
+                margin: 0 2rem;
+                transform: translateY(-50%);
             }
         }
     }
