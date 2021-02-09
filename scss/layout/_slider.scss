@@ -63,6 +63,16 @@
                 top: 40%;
                 margin: 0 2rem;
                 transform: translateY(-50%);
+
+                @include respond(sm) {
+                    left: 50%;
+                    max-width: 50%;
+                    transform: translateX(-50%) translateY(-50%);
+                }
+
+                @include respond(md) {
+                    max-width: 30%;
+                }
             }
         }
     }

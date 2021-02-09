@@ -1,0 +1,12 @@
+&.login {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+&.register{
+    padding-top: 4rem;
+    
+    @include respond(sm) {
+        padding-top: 1rem;
+    }
+}

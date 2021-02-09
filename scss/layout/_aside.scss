@@ -1,0 +1,10 @@
+.app-aside {
+    margin-top: 6rem;
+    padding: 1rem;
+    background-color: $color-white;
+    border-radius: $border-radius-default;
+
+    @include respond(sm) {
+        margin-top: 1rem;
+    }
+}

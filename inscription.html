@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>S'inscrire ou se connecter - DynaiStore - E-commerce frontend template</title>
+    <meta name="description" content="…" />
+
+    <script src="https://kit.fontawesome.com/b916232238.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.min.css" />
+</head>
+
+<body>
+    <!-- Application header -->
+    <header class="app-header">
+        <div class="app-brand">
+            <a href="./" class="app-logo" title="Retour à l'accueil">
+                <img src="img/logo-dynaistore.png" alt="Logo DynaiStore" />
+            </a>
+            <div class="app-name">
+                <a href="./" class="app-logo" title="Retour à l'accueil">
+                    <h1 class="app-title"><span>Dyn</span><span>ai</span>Store</h1>
+                    <p class="app-slogan"><span>E-commerce</span> <span>frontend</span> template</p>
+                </a>
+            </div>
+        </div>
+
+        <!-- Application main menu -->
+        <nav class="app-mainmenu">
+            <ul class="app-menu">
+                <li>
+                    <a href="#" title="">
+                        <i class="fas fa-store"></i>
+                        Boutique
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="">
+                        <i class="far fa-user"></i>
+                        Client
+                    </a>
+                </li>
+                <li style="display: none;">
+                    <a href="#" title="">
+                        <i class="fas fa-power-off"></i>
+                        Déconnexion
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="">
+                        <i class="fas fa-shopping-cart"></i>
+                        Panier
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Application main -->
+    <main class="app-main app-grid grid-two">
+        <section class="login">
+            <header>
+                <h2>Déjà client <span>Je m'identifie</span></h2>
+            </header>
+
+            <form class="app-form">
+                <div class="form-group">
+                    <p class="form-info"><span>*</span> champs obligatoires</p>
+                </div>
+
+                <div class="form-group">
+                    <label for="loginEmail">Votre adresse email <span>*</span></label>
+                    <input type="email" class="form-control" name="loginEmail" id="loginEmail" placeholder="ex: sophie@dupont.com" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="loginPassword">Votre mot de passe <span>*</span></label>
+                    <input type="password" name="loginPassword" id="loginPassword" class="form-control" required />
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="app-btn">Connexion</button>
+                </div>
+                
+                <div class="form-group">
+                    <p class="form-info">
+                        <a href="#" title="Mot de passe perdu">Mot de passe perdu</a>
+                    </p>
+                </div>
+            </form>
+
+            <aside class="app-aside">
+                <div class="app-grid grid-three">
+                    <div class="grid-item noshadow">
+                        <div class="grid-item-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="grid-item-content">
+                            <h3 class="grid-item-title">Tranquille</h3>
+                            <p class="grid-item-description">Depuis votre canapé</p>
+                        </div>
+                    </div>
+
+                    <div class="grid-item noshadow">
+                        <div class="grid-item-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <div class="grid-item-content">
+                            <h3 class="grid-item-title">En sécurité</h3>
+                            <p class="grid-item-description">Paiement sécurisé par CB</p>
+                        </div>
+                    </div>
+
+                    <div class="grid-item noshadow">
+                        <div class="grid-item-icon">
+                            <i class="fas fa-shipping-fast"></i>
+                        </div>
+                        <div class="grid-item-content">
+                            <h3 class="grid-item-title">Vite livré</h3>
+                            <p class="grid-item-description">Gratuitement à partir de 30€</p>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </section>
+
+        <section class="register" id="inscription">
+            <header>
+                <h2>Nouveau client <span>Je crée mon compte</span></h2>
+            </header>
+
+            <form class="app-form">
+                <div class="form-group">
+                    <p class="form-info"><span>*</span> champs obligatoires</p>
+                </div>
+
+                <fieldset>
+                    <legend>Vos identifiants</legend>
+
+                    <div class="form-group">
+                        <label for="registerEmail">Votre adresse email <span>*</span></label>
+                        <input type="email" class="form-control" name="registerEmail" id="registerEmail" placeholder="ex: sophie@dupont.com" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="registerPassword">Votre mot de passe <span>*</span></label>
+                        <input type="password" class="form-control" name="registerPassword" id="registerPassword" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="registerPasswordConfirm">Confirmation <span>*</span></label>
+                        <input type="password" class="form-control" name="registerPasswordConfirm" id="registerPasswordConfirm" required />
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Votre identité</legend>
+
+                    <div class="form-group">
+                        <label for="registerFirstname">Votre prénom <span>*</span></label>
+                        <input type="text" class="form-control" name="registerFirstname" id="registerFirstname" placeholder="ex: Sophie" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="registerLastname">Votre nom <span>*</span></label>
+                        <input type="text" class="form-control" name="registerLastname" id="registerLastname" placeholder="ex: Dupont" required />
+                    </div>
+                </fieldset>
+
+                <div class="form-group">
+                    <button type="submit" class="app-btn">Inscription</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Application footer -->
+    <footer class="app-footer">
+        <p class="app-copyrights">© Dynaidev</p>
+    </footer>
+</body>
+
+</html>

@@ -4,6 +4,10 @@
     & > section {
         padding: 3rem 0.75rem;
 
+        @include respond(md) {
+            padding: 3rem 1rem;
+        }
+
         & > header {
             margin: 0.5rem 0 1rem;
 
@@ -15,7 +19,7 @@
                 text-align: center;
                 color: $color-white;
                 background-color: $color-primary;
-                border-radius: $thumbnail-border-radius;
+                border-radius: $border-radius-default;
 
                 span {
                     display: block;
@@ -24,7 +28,7 @@
                     text-align: right;
                     color: $color-black;
 
-                    @include respond(sm) {
+                    @include respond(md) {
                         display: inline;
                         vertical-align: sub;
                     }
@@ -33,5 +37,6 @@
         }
 
         @import "../pages/homepage";
+        @import "../pages/register";
     }
 }
